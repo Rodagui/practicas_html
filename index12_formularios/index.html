@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formularios</title>
+</head>
+<body>
+
+	<!--hay que validar formularios-->
+
+	<h1> Formularios </h1>
+	<form>
+		<div>
+			
+			<label>
+				Ingrese su nombre de usuario: 
+				<input id="username" name="username" placeholder="Nombre">
+			</label>
+			
+		</div>
+		<div>
+			<label>
+				Ingrese su correo;
+				<input type="email" >
+			</label>
+		</div>
+
+		<div>
+			<label>
+				fecha: 
+				<input type="date">
+			</label>
+		</div>
+
+		<div>
+			<label>
+				No. de artículos: 
+				<input type="number">
+			</label>
+		</div>
+
+		<div>
+			
+			<label>
+				Ingrese su contraseña:
+				<input id="password" type="password" name="password">
+
+			</label>
+		</div>
+		
+		<div>
+			<input type="submit" value="Iniciar sesión">
+			<!--button>Enviar</button-->
+		</div>
+		
+	</form>
+
+
+
+
+
+
+
+	<!--a través de un javascript se lee en tiempo real lo que se escribe-->
+	<script>
+		document.getElementById('password').addEventListener('keyup', e =>{
+			console.log(e.target.value)
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Tablas</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<!--tablas-->
+	<table>
+		<caption>Mi horario de clase  <!--para darle título a la tabla-->
+		</caption>
+
+		<!--para una columna-->
+		<colgroup> <!--cada col representa una columna-->
+			<!--col-->
+			<!--col-->
+			<!--col-->
+			<col span="3">
+			<col style="background: yellow">
+			<!--col-->
+		</colgroup>
+		<thead>
+			
+			<tr> <!--table row, fila--> <!--para una cabecera es th-->
+				<th> <!--table data-->	
+					Lunes</th>
+				<th>Martes</th>
+				<th>Miércoles</th>
+				<th>Jueves</th>
+				<th>Viernes</th>
+			</tr>
+			
+		</thead>
+		<tbody>
+			
+			<tr>
+				<td rowspan="2">HTML</td>
+				<TD>css</TD>
+				<td rowspan="2">js</td>
+				<td>java</td>
+				<td>c++</td>
+			</tr>
+			<tr>
+				
+				<TD>parse</TD>
+				
+				<td>python</td>
+				<td>atom</td>
+			</tr>
+			<tr>
+				<td colspan="5">R e c r e o</td>
+			</tr>
+			<tr>
+				<td>java</td>
+				<TD>sql</TD>
+				<td>algorimos</td>
+				<td>python</td>
+				<td>c</td>
+			</tr>
+			
+		</tbody>
+
+		<tfoot><!--para conclusiones en la tabla, por ejemplo un total-->
+			<tr style="background: yellow">
+				<td>3 crd</td>
+				<td>5 crd</td>
+				<td>5 crd</td>
+				<td>4 crd</td>
+				<td>10 crd</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>

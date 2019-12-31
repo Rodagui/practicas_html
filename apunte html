@@ -1,0 +1,64 @@
+HTML: Lenguaje base para la web
+HTML: Hyper Text Markup Lenguaje
+
+Internet es la infraestructura física mundial tecnologica que permite que las computadoras se conecten
+Web: conjunto de documentos html enlazados a través de hipertexto
+
+Estructura básica:
+	<html lang="es"> <!--Idioma que estoy usando-->
+		<head>
+			<meta charset="utf-8">
+			<title>Título </title>
+		</head>
+
+		<body>
+			<!--Contenido que se muetsra en pantalla-->
+		</body>
+	</html>
+
+Estandar: reglas que se siguen
+      atributo
+<h1 id="main-title"> Curso HTML DESDE CERO (2017) </h1>
+etiqueta de apertura   contenido					etiqueta de cierre
+
+	  atributo
+<img src="foto.jpg">
+
+atributos: datos adicionales para la etiqueta
+
+JavaScript le añade interaccion a la página
+
+
+
+
+
+
+Web semántica: con un significado
+Listas ordenadas: Ordered list <ol>
+<li> cada elemento de un <ol>
+
+Ctrl + shft + d, duplica la ultima línea
+Siempre la frase o parrafo debe de ir dentro de la etiqueta <p> </p>
+
+
+con ordered list sale como números (hay un orden)
+con unordered salen puntos, o sea que el orden no importa
+
+cuando el orden si importa hay que usar listas ordenadas 
+
+<figure>
+Es para mostrar contenido que rompen con el flujo pero que deben estar ahí por tener relación con el contenido
+
+<pre> es decirle al navegador que considere los espacios en linea y los espacios en blanco que tiene el contenido
+<div> "caja" para acomodar las cosas
+
+Elemento de línea, se ponen los elementos uno al lado de otro
+
+Elemento de bloque: visualmente ocupa el espacio disponible en pantalla y el sigyuiente elemeno de bloque aparece después
+
+<p> Es un elemento de bloque <p>
+<span> Es un elemento de línea y estan dentro de elementos de bloque<p>
+
+
+
+

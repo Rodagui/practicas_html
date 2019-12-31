@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Interactividad y contenido embebido</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+	<dialog id="modal">  <!--  <dialog open    ventana modal, con el atributo open se ve en pantalla, sin él, no. 					Además se sobrepone-->
+		<h2>Curso html desde cero</h2>
+		<p>Precio: S/ 135.00</p>
+		<p>Profesor: El Felipe</p>
+
+		<button id="close">Cerrar</button>
+	</dialog>
+
+	<button id="button">
+		Abrir modal
+	</button>
+
+	<!--Interactividad: elementos que reaciones de una manera con lo que el usuario hace-->
+
+	<h1>Contenido interactivo</h1>
+	<details> <!--crea un acordeón, widget que se expande y cierra-->
+		<summary>HTML</summary> <!--el título del despliegue, si no lleva summary dice detalles-->
+		<p>Lenguaje de marcado de hipertexto</p>
+		<P>se creó en 1989</P>
+	</details>
+
+	<script>
+		
+		const modal = document.getElementById('modal');
+		const button = document.getElementById('button');
+		const close = document.getElementById('close');
+
+
+		button.addEventListener('click', ()=> {
+			modal.setAttribute('open', 'true')
+		})
+
+		close.addEventListener('click', ()=>{
+			modal.removeAttribute('open')
+		})
+
+
+
+	</script>
+
+</body>
+</html>

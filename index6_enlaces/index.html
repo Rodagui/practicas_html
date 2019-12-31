@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+	<!--Rutas relativas: dependen de las carpetas-->
+	<!--Rutas absolutas: únicas y empeizan con un protocolo-->
+	
+		<!--ruta absoluta-->
+		<p><a href="https://ed.team">Educación con honestidad </a> </p>
+
+		<!-- ruta relativa, misma caréta-->
+		<p><a href="usuarios.html">Usuarios </a></p>
+		<p><a href="./usuarios.html"> Usuarios </a></p> <!--te lleva a la misma carpeta pero a veces
+														es preferible por el servidor, poner  ./	 -->
+
+		<p><a href="./subcarpeta/subcarpeta.html">Ir a subcarpetas</a></p>
+		<!--ruta relativa carpeta superior-->
+		<p><a href="../usuarios.html">Usuarios</a></p>
+
+		<!--ruta relativa dos carpetas arriba y subcarpeta-->
+		<p><a href="../../usuarios/usuarios.html">usu</a></p>
+
+		<!--ruta relativa a la raiz-->
+		<p><a href="/usuarios,html">usuarios</a></p>
+
+</body>
+</html>

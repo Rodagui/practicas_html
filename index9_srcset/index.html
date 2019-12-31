@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+</head>
+<body>
+	<!--cuando se necesita más de una imagen-->
+	<!--cuando tengas dif ratios o dif tamaños del viewport-->
+
+	<!--img src="img/hand.jpg" srcset="img/luces.jpg 1.5x, img/red.jpg 2x" --> <!--zoom-->
+	<!--img src="img/hand.jpg" srcset="img/luces.jpg 500w, img/red.jpg 800w" -->
+
+	<picture> <!--tiene varios elementos source y cada elementos es para una imagen diferente-->
+		<source srcset="img/luces.jpg" media="(min-width: 800px)"> <!--para tamaños mayores a 800 pixeles-->
+		<source srcset="img/hand.jpg" media="(min-width: 500px)"> <!--para tamaños mayores a 500 pixeles .............es como un if else-->
+		<img src="img/red.jpg" alt="img de un vestido rojo"> <!--imagen por defecto, cuando no cumple la sotras dos condiciones-->
+		
+	</picture>
+
+</body>
+</html>
